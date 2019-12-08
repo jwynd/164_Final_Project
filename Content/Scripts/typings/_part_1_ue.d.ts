@@ -14386,7 +14386,7 @@ declare class PrimaryAssetRulesCustomOverride {
 
 declare class AssetManagerRedirect { 
 	Old: string;
-	NEW: string;
+	New: string;
 	clone() : AssetManagerRedirect;
 	static C(Other: UObject | any): AssetManagerRedirect;
 }
