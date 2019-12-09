@@ -129,7 +129,7 @@ declare class MaterialExpressionVectorNoise extends MaterialExpression {
 	NoiseFunction: EVectorNoiseFunction;
 	Quality: number;
 	bTiling: boolean;
-	TileSize: any;
+	tileSize: any;
 	static Load(ResourceName: string): MaterialExpressionVectorNoise;
 	static Find(Outer: UObject, ResourceName: string): MaterialExpressionVectorNoise;
 	static GetDefaultObject(): MaterialExpressionVectorNoise;
@@ -3619,7 +3619,7 @@ declare class LightMapVirtualTexture2D extends Texture2D {
 
 declare class VirtualTextureSpacePoolConfig { 
 	SizeInMegabyte: number;
-	TileSize: number;
+	tileSize: number;
 	Format: EPixelFormat;
 	clone() : VirtualTextureSpacePoolConfig;
 	static C(Other: UObject | any): VirtualTextureSpacePoolConfig;
@@ -9502,7 +9502,7 @@ declare class PaperTileSetTerrain {
 }
 
 declare class PaperTileSet extends UObject { 
-	TileSize: IntPoint;
+	tileSize: IntPoint;
 	TileSheet: Texture2D;
 	AdditionalSourceTextures: Texture[];
 	BorderMargin: IntMargin;
