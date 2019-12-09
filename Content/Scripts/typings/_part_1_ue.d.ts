@@ -5164,7 +5164,7 @@ declare class BlueprintEditorSettings extends UObject {
 	bHideConstructionScriptComponentsInDetailsView: boolean;
 	bHostFindInBlueprintsInGlobalTab: boolean;
 	bNavigateToNativeFunctionsFromCallNodes: boolean;
-	BookMarks: any;
+	Bookmarks: any;
 	BookmarkNodes: BPEditorBookmarkNode[];
 	bIncludeCommentNodesInBookmarksTab: boolean;
 	bShowBookmarksForCurrentDocumentOnlyInTab: boolean;
@@ -12996,7 +12996,7 @@ declare class FoliageTypeObject {
 
 declare class ProceduralFoliageSpawner extends UObject { 
 	RandomSeed: number;
-	tileSize: number;
+	TileSize: number;
 	NumUniqueTiles: number;
 	MinimumQuadTreeSize: number;
 	FoliageTypes: FoliageTypeObject[];

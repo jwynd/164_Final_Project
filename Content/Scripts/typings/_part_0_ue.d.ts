@@ -1214,7 +1214,7 @@ declare class RuntimeVirtualTexture extends UObject {
 	MaterialType: ERuntimeVirtualTextureMaterialType;
 	bCompressTextures: boolean;
 	Size: number;
-	tileSize: number;
+	TileSize: number;
 	TileBorderSize: number;
 	RemoveLowMips: number;
 	bEnable: boolean;
@@ -9513,7 +9513,7 @@ declare class Blueprint extends BlueprintCore {
 	ImplementedInterfaces: BPInterfaceDescription[];
 	BlueprintSystemVersion: number;
 	LastEditedDocuments: EditedDocumentInfo[];
-	BookMarks: any;
+	Bookmarks: any;
 	BookmarkNodes: BPEditorBookmarkNode[];
 	Breakpoints: Breakpoint[];
 	WatchedPins: EdGraphPinReference[];
@@ -11987,7 +11987,7 @@ declare class WorldSettings extends Info {
 	HierarchicalLODSetup: HierarchicalSimplification[];
 	NumHLODLevels: number;
 	bGenerateSingleClusterForLevel: boolean;
-	BookMarks: BookMark;
+	Bookmarks: BookMark;
 	TimeDilation: number;
 	MatineeTimeDilation: number;
 	DemoPlayTimeDilation: number;
