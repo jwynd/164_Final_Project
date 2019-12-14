@@ -9957,7 +9957,7 @@ declare class PixelInspectorView extends UObject {
 	SubsurfaceColor: LinearColor;
 	SubsurfaceProfile: Vector;
 	Opacity: number;
-	Clearcoat: number;
+	ClearCoat: number;
 	ClearCoatRoughness: number;
 	WorldNormal: Vector;
 	BackLit: number;
@@ -11357,15 +11357,15 @@ declare class JavascriptAutomatedTestInstance {
 	AddLogItem(InLogItem: string): void;
 	AddWarning(InWarning: string): void;
 	ClearExecutionInfo(): void;
-	Destroy(): {Test: JavascriptAutomatedTestInstance};
+	Destroy(): {test: JavascriptAutomatedTestInstance};
 	SetContinue(bInContinue: boolean): void;
-	static AddAnalyticsItem(Test: JavascriptAutomatedTestInstance,InAnalyticsItem: string): void;
-	static AddError(Test: JavascriptAutomatedTestInstance,InError: string): void;
-	static AddLogItem(Test: JavascriptAutomatedTestInstance,InLogItem: string): void;
-	static AddWarning(Test: JavascriptAutomatedTestInstance,InWarning: string): void;
-	static ClearExecutionInfo(Test: JavascriptAutomatedTestInstance): void;
-	static Destroy(Test?: JavascriptAutomatedTestInstance): {Test: JavascriptAutomatedTestInstance};
-	static SetContinue(Test: JavascriptAutomatedTestInstance,bInContinue: boolean): void;
+	static AddAnalyticsItem(test: JavascriptAutomatedTestInstance,InAnalyticsItem: string): void;
+	static AddError(test: JavascriptAutomatedTestInstance,InError: string): void;
+	static AddLogItem(test: JavascriptAutomatedTestInstance,InLogItem: string): void;
+	static AddWarning(test: JavascriptAutomatedTestInstance,InWarning: string): void;
+	static ClearExecutionInfo(test: JavascriptAutomatedTestInstance): void;
+	static Destroy(test?: JavascriptAutomatedTestInstance): {test: JavascriptAutomatedTestInstance};
+	static SetContinue(test: JavascriptAutomatedTestInstance,bInContinue: boolean): void;
 }
 
 declare class JavascriptAutomatedTest { 
@@ -11378,7 +11378,7 @@ declare class JavascriptAutomatedTest {
 	clone() : JavascriptAutomatedTest;
 	static C(Other: UObject | any): JavascriptAutomatedTest;
 	Create(): JavascriptAutomatedTestInstance;
-	static Create(Test: JavascriptAutomatedTest): JavascriptAutomatedTestInstance;
+	static Create(test: JavascriptAutomatedTest): JavascriptAutomatedTestInstance;
 }
 
 declare class JavascriptTestLibrary extends BlueprintFunctionLibrary { 
@@ -11386,21 +11386,21 @@ declare class JavascriptTestLibrary extends BlueprintFunctionLibrary {
 	static Find(Outer: UObject, ResourceName: string): JavascriptTestLibrary;
 	static GetDefaultObject(): JavascriptTestLibrary;
 	static CreateDefaultSubobject(Name: string, Transient?: boolean, Required?: boolean, Abstract?: boolean): JavascriptTestLibrary;
-	static SetContinue(Test: JavascriptAutomatedTestInstance,bInContinue: boolean): void;
+	static SetContinue(test: JavascriptAutomatedTestInstance,bInContinue: boolean): void;
 	static PushFrameCounter(): void;
 	static PopFrameCounter(): void;
 	static NewWorld(): World;
 	static InitializeActorsForPlay(World: World,URL: URL): void;
 	static DestroyWorld(World: World): void;
 	static DestroyUObject(UObject: UObject): void;
-	static Destroy(Test?: JavascriptAutomatedTestInstance): {Test: JavascriptAutomatedTestInstance};
-	static Create(Test: JavascriptAutomatedTest): JavascriptAutomatedTestInstance;
-	static ClearExecutionInfo(Test: JavascriptAutomatedTestInstance): void;
+	static Destroy(test?: JavascriptAutomatedTestInstance): {test: JavascriptAutomatedTestInstance};
+	static Create(test: JavascriptAutomatedTest): JavascriptAutomatedTestInstance;
+	static ClearExecutionInfo(test: JavascriptAutomatedTestInstance): void;
 	static BeginPlay(World: World): void;
-	static AddWarning(Test: JavascriptAutomatedTestInstance,InWarning: string): void;
-	static AddLogItem(Test: JavascriptAutomatedTestInstance,InLogItem: string): void;
-	static AddError(Test: JavascriptAutomatedTestInstance,InError: string): void;
-	static AddAnalyticsItem(Test: JavascriptAutomatedTestInstance,InAnalyticsItem: string): void;
+	static AddWarning(test: JavascriptAutomatedTestInstance,InWarning: string): void;
+	static AddLogItem(test: JavascriptAutomatedTestInstance,InLogItem: string): void;
+	static AddError(test: JavascriptAutomatedTestInstance,InError: string): void;
+	static AddAnalyticsItem(test: JavascriptAutomatedTestInstance,InAnalyticsItem: string): void;
 	static C(Other: UObject | any): JavascriptTestLibrary;
 }
 
@@ -15293,7 +15293,7 @@ declare class EditableMesh extends UObject {
 	SetAllowCompact(bInAllowCompact: boolean): void;
 	SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(InPlane: Plane,OutPolygons?: PolygonID[]): {OutPolygons: PolygonID[]};
 	SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(LineSegmentStart: Vector,LineSegmentEnd: Vector,OutPolygons?: PolygonID[]): {OutPolygons: PolygonID[]};
-	SearchSpatialDatabaseForPolygonsInVolume(planes: Plane[],OutPolygons?: PolygonID[]): {OutPolygons: PolygonID[]};
+	SearchSpatialDatabaseForPolygonsInVolume(Planes: Plane[],OutPolygons?: PolygonID[]): {OutPolygons: PolygonID[]};
 	RevertInstance(): EditableMesh;
 	Revert(): void;
 	RemovePolygonPerimeterVertices(PolygonID: PolygonID,FirstVertexNumberToRemove: number,NumVerticesToRemove: number,bDeleteOrphanedVertexInstances: boolean): void;
@@ -16084,7 +16084,7 @@ declare class JavascriptAssetEditorToolkit extends UObject {
 	Commands: JavascriptUICommands;
 	MenuExtender: JavascriptUIExtender;
 	ToolbarExtender: JavascriptUIExtender;
-	TestArray: number[];
+	testArray: number[];
 	static Load(ResourceName: string): JavascriptAssetEditorToolkit;
 	static Find(Outer: UObject, ResourceName: string): JavascriptAssetEditorToolkit;
 	static GetDefaultObject(): JavascriptAssetEditorToolkit;
