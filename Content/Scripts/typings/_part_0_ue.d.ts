@@ -10840,8 +10840,8 @@ declare class Vector2D {
 	static Conv_Vector2DToIntPoint(InVector2D: Vector2D): IntPoint;
 	static Conv_Vector2DToVector(InVector2D: Vector2D,Z: number): Vector;
 	static CrossProduct2D(A: Vector2D,B: Vector2D): number;
-	static Distance2D(v1: Vector2D,v2: Vector2D): number;
-	static DistanceSquared2D(v1: Vector2D,v2: Vector2D): number;
+	static Distance2D(V1: Vector2D,v2: Vector2D): number;
+	static DistanceSquared2D(V1: Vector2D,v2: Vector2D): number;
 	static Divide_Vector2DFloat(A: Vector2D,B: number): Vector2D;
 	static Divide_Vector2DVector2D(A: Vector2D,B: Vector2D): Vector2D;
 	static DotProduct2D(A: Vector2D,B: Vector2D): number;
@@ -11173,10 +11173,10 @@ declare class Vector {
 	static Vector_ComponentMax(A: Vector,B: Vector): Vector;
 	static Vector_ComponentMin(A: Vector,B: Vector): Vector;
 	static Vector_CosineAngle2D(A: Vector,B: Vector): number;
-	static Vector_Distance(v1: Vector,v2: Vector): number;
-	static Vector_Distance2D(v1: Vector,v2: Vector): number;
-	static Vector_Distance2DSquared(v1: Vector,v2: Vector): number;
-	static Vector_DistanceSquared(v1: Vector,v2: Vector): number;
+	static Vector_Distance(V1: Vector,v2: Vector): number;
+	static Vector_Distance2D(V1: Vector,v2: Vector): number;
+	static Vector_Distance2DSquared(V1: Vector,v2: Vector): number;
+	static Vector_DistanceSquared(V1: Vector,v2: Vector): number;
 	static Vector_GetAbs(A: Vector): Vector;
 	static Vector_GetAbsMax(A: Vector): number;
 	static Vector_GetAbsMin(A: Vector): number;

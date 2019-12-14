@@ -15795,7 +15795,7 @@ declare class DistributionVectorUniform extends DistributionVector {
 }
 
 declare class TwoVectors { 
-	v1: Vector;
+	V1: Vector;
 	v2: Vector;
 	clone() : TwoVectors;
 	static C(Other: UObject | any): TwoVectors;
@@ -17352,10 +17352,10 @@ declare class KismetMathLibrary extends BlueprintFunctionLibrary {
 	static Vector_GetAbs(A: Vector): Vector;
 	static Vector_Forward(): Vector;
 	static Vector_Down(): Vector;
-	static Vector_DistanceSquared(v1: Vector,v2: Vector): number;
-	static Vector_Distance2DSquared(v1: Vector,v2: Vector): number;
-	static Vector_Distance2D(v1: Vector,v2: Vector): number;
-	static Vector_Distance(v1: Vector,v2: Vector): number;
+	static Vector_DistanceSquared(V1: Vector,v2: Vector): number;
+	static Vector_Distance2DSquared(V1: Vector,v2: Vector): number;
+	static Vector_Distance2D(V1: Vector,v2: Vector): number;
+	static Vector_Distance(V1: Vector,v2: Vector): number;
 	static Vector_CosineAngle2D(A: Vector,B: Vector): number;
 	static Vector_ComponentMin(A: Vector,B: Vector): Vector;
 	static Vector_ComponentMax(A: Vector,B: Vector): Vector;
@@ -17807,8 +17807,8 @@ declare class KismetMathLibrary extends BlueprintFunctionLibrary {
 	static Divide_Int64Int64(A: any,B: any): any;
 	static Divide_FloatFloat(A: number,B: number): number;
 	static Divide_ByteByte(A: number,B: number): number;
-	static DistanceSquared2D(v1: Vector2D,v2: Vector2D): number;
-	static Distance2D(v1: Vector2D,v2: Vector2D): number;
+	static DistanceSquared2D(V1: Vector2D,v2: Vector2D): number;
+	static Distance2D(V1: Vector2D,v2: Vector2D): number;
 	static DegTan(A: number): number;
 	static DegSin(A: number): number;
 	static DegreesToRadians(A: number): number;
