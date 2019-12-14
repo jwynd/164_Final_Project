@@ -1214,7 +1214,7 @@ declare class RuntimeVirtualTexture extends UObject {
 	MaterialType: ERuntimeVirtualTextureMaterialType;
 	bCompressTextures: boolean;
 	Size: number;
-	tileSize: number;
+	TileSize: number;
 	TileBorderSize: number;
 	RemoveLowMips: number;
 	bEnable: boolean;

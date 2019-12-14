@@ -12996,7 +12996,7 @@ declare class FoliageTypeObject {
 
 declare class ProceduralFoliageSpawner extends UObject { 
 	RandomSeed: number;
-	tileSize: number;
+	TileSize: number;
 	NumUniqueTiles: number;
 	MinimumQuadTreeSize: number;
 	FoliageTypes: FoliageTypeObject[];

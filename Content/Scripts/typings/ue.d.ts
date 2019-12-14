@@ -129,7 +129,7 @@ declare class MaterialExpressionVectorNoise extends MaterialExpression {
 	NoiseFunction: EVectorNoiseFunction;
 	Quality: number;
 	bTiling: boolean;
-	tileSize: any;
+	TileSize: any;
 	static Load(ResourceName: string): MaterialExpressionVectorNoise;
 	static Find(Outer: UObject, ResourceName: string): MaterialExpressionVectorNoise;
 	static GetDefaultObject(): MaterialExpressionVectorNoise;
@@ -3619,7 +3619,7 @@ declare class LightMapVirtualTexture2D extends Texture2D {
 
 declare class VirtualTextureSpacePoolConfig { 
 	SizeInMegabyte: number;
-	tileSize: number;
+	TileSize: number;
 	Format: EPixelFormat;
 	clone() : VirtualTextureSpacePoolConfig;
 	static C(Other: UObject | any): VirtualTextureSpacePoolConfig;
@@ -9502,7 +9502,7 @@ declare class PaperTileSetTerrain {
 }
 
 declare class PaperTileSet extends UObject { 
-	tileSize: IntPoint;
+	TileSize: IntPoint;
 	TileSheet: Texture2D;
 	AdditionalSourceTextures: Texture[];
 	BorderMargin: IntMargin;
@@ -11357,15 +11357,15 @@ declare class JavascriptAutomatedTestInstance {
 	AddLogItem(InLogItem: string): void;
 	AddWarning(InWarning: string): void;
 	ClearExecutionInfo(): void;
-	Destroy(): {test: JavascriptAutomatedTestInstance};
+	Destroy(): {Test: JavascriptAutomatedTestInstance};
 	SetContinue(bInContinue: boolean): void;
-	static AddAnalyticsItem(test: JavascriptAutomatedTestInstance,InAnalyticsItem: string): void;
-	static AddError(test: JavascriptAutomatedTestInstance,InError: string): void;
-	static AddLogItem(test: JavascriptAutomatedTestInstance,InLogItem: string): void;
-	static AddWarning(test: JavascriptAutomatedTestInstance,InWarning: string): void;
-	static ClearExecutionInfo(test: JavascriptAutomatedTestInstance): void;
-	static Destroy(test?: JavascriptAutomatedTestInstance): {test: JavascriptAutomatedTestInstance};
-	static SetContinue(test: JavascriptAutomatedTestInstance,bInContinue: boolean): void;
+	static AddAnalyticsItem(Test: JavascriptAutomatedTestInstance,InAnalyticsItem: string): void;
+	static AddError(Test: JavascriptAutomatedTestInstance,InError: string): void;
+	static AddLogItem(Test: JavascriptAutomatedTestInstance,InLogItem: string): void;
+	static AddWarning(Test: JavascriptAutomatedTestInstance,InWarning: string): void;
+	static ClearExecutionInfo(Test: JavascriptAutomatedTestInstance): void;
+	static Destroy(Test?: JavascriptAutomatedTestInstance): {Test: JavascriptAutomatedTestInstance};
+	static SetContinue(Test: JavascriptAutomatedTestInstance,bInContinue: boolean): void;
 }
 
 declare class JavascriptAutomatedTest { 
@@ -11378,7 +11378,7 @@ declare class JavascriptAutomatedTest {
 	clone() : JavascriptAutomatedTest;
 	static C(Other: UObject | any): JavascriptAutomatedTest;
 	Create(): JavascriptAutomatedTestInstance;
-	static Create(test: JavascriptAutomatedTest): JavascriptAutomatedTestInstance;
+	static Create(Test: JavascriptAutomatedTest): JavascriptAutomatedTestInstance;
 }
 
 declare class JavascriptTestLibrary extends BlueprintFunctionLibrary { 
@@ -11386,21 +11386,21 @@ declare class JavascriptTestLibrary extends BlueprintFunctionLibrary {
 	static Find(Outer: UObject, ResourceName: string): JavascriptTestLibrary;
 	static GetDefaultObject(): JavascriptTestLibrary;
 	static CreateDefaultSubobject(Name: string, Transient?: boolean, Required?: boolean, Abstract?: boolean): JavascriptTestLibrary;
-	static SetContinue(test: JavascriptAutomatedTestInstance,bInContinue: boolean): void;
+	static SetContinue(Test: JavascriptAutomatedTestInstance,bInContinue: boolean): void;
 	static PushFrameCounter(): void;
 	static PopFrameCounter(): void;
 	static NewWorld(): World;
 	static InitializeActorsForPlay(World: World,URL: URL): void;
 	static DestroyWorld(World: World): void;
 	static DestroyUObject(UObject: UObject): void;
-	static Destroy(test?: JavascriptAutomatedTestInstance): {test: JavascriptAutomatedTestInstance};
-	static Create(test: JavascriptAutomatedTest): JavascriptAutomatedTestInstance;
-	static ClearExecutionInfo(test: JavascriptAutomatedTestInstance): void;
+	static Destroy(Test?: JavascriptAutomatedTestInstance): {Test: JavascriptAutomatedTestInstance};
+	static Create(Test: JavascriptAutomatedTest): JavascriptAutomatedTestInstance;
+	static ClearExecutionInfo(Test: JavascriptAutomatedTestInstance): void;
 	static BeginPlay(World: World): void;
-	static AddWarning(test: JavascriptAutomatedTestInstance,InWarning: string): void;
-	static AddLogItem(test: JavascriptAutomatedTestInstance,InLogItem: string): void;
-	static AddError(test: JavascriptAutomatedTestInstance,InError: string): void;
-	static AddAnalyticsItem(test: JavascriptAutomatedTestInstance,InAnalyticsItem: string): void;
+	static AddWarning(Test: JavascriptAutomatedTestInstance,InWarning: string): void;
+	static AddLogItem(Test: JavascriptAutomatedTestInstance,InLogItem: string): void;
+	static AddError(Test: JavascriptAutomatedTestInstance,InError: string): void;
+	static AddAnalyticsItem(Test: JavascriptAutomatedTestInstance,InAnalyticsItem: string): void;
 	static C(Other: UObject | any): JavascriptTestLibrary;
 }
 
@@ -16084,7 +16084,7 @@ declare class JavascriptAssetEditorToolkit extends UObject {
 	Commands: JavascriptUICommands;
 	MenuExtender: JavascriptUIExtender;
 	ToolbarExtender: JavascriptUIExtender;
-	testArray: number[];
+	TestArray: number[];
 	static Load(ResourceName: string): JavascriptAssetEditorToolkit;
 	static Find(Outer: UObject, ResourceName: string): JavascriptAssetEditorToolkit;
 	static GetDefaultObject(): JavascriptAssetEditorToolkit;
