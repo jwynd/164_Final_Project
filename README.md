@@ -9,6 +9,9 @@ Press 2 to generate a city from a weighted selection of random tiles. Press 3 to
 a random skybox. Press 'R' to reset the level
 to how it was when you entered.
 
+[Write up PDF](https://github.com/jwynd/164_Final_Project/blob/master/Documentation/Final%20Write%20Up.pdf)
+
+[Presentation Slides](https://docs.google.com/presentation/d/1mumftHETk_PfYT6gRWXjNm5XDE6IBqPTvT0kxA28cq8/edit#slide=id.g7abe135498_0_66)
 
 Click the images below for demo videos.
 
