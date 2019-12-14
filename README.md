@@ -1,6 +1,6 @@
 # Generative Cities
-### CMPM 164 Final Project
-By Scott Melero and Jacob Wynd
+## CMPM 164 Final Project
+#### By Scott Melero and Jacob Wynd
 
 To run download the project folder and open in Unreal 4.23.
 Navigate to the PCG folder and open the level PCG_P. After running the level,
